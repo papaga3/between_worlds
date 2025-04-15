@@ -3,7 +3,6 @@ import Worlds from "./Components/WorldComponent"
 function App() {
   return (
     <div>
-      APP
       <Worlds />
     </div>
   )

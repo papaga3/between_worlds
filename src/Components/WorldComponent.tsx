@@ -1,18 +1,20 @@
-import { useAtom } from "jotai";
-import { worldAtom } from "../jotai/atoms";
-import { World } from "../constance";
+import EssenceZone from "./EssenceZone";
 
 const Worlds: React.FC = () => {
-    const [world, setWorld] = useAtom(worldAtom);
+   
     return (
-        <div>
-            {world}
-            <button onClick={() => {
-                if(world === World.Overworld) { 
-                        setWorld(World.Underworld);
-                    }
-                else { setWorld(World.Overworld) }
-            }}> Set World </button>
+        <div className="grid md:grid-cols-4 grid-cols-1 h-[32rem] w-[90rem] m-auto mt-2">
+            <div className="border h-full block">
+                <EssenceZone />
+            </div>
+
+            <div className="border col-span-2 h-full block">
+
+            </div>
+
+            <div className="border h-full block">
+
+            </div>
         </div>
     );
 }
