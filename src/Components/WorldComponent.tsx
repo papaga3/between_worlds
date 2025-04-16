@@ -1,3 +1,4 @@
+import BuyZone from "./BuyZone.";
 import EssenceZone from "./EssenceZone";
 
 const Worlds: React.FC = () => {
@@ -15,7 +16,7 @@ const Worlds: React.FC = () => {
             </div>
 
             <div className="border h-full block">
-
+                <BuyZone />
             </div>
         </div>
     );

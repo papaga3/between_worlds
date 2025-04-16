@@ -9,7 +9,7 @@ const EssenceZone: React.FC = () => {
         <div>
             <h1 className={`${header1}`}> Welcome to the { world } </h1>
             <h2 className={`${header2}`}> Click the zone to generate essence </h2>
-            <h2 className={`${header2}`}> Current World Essence: {essence[world]} </h2>
+            <h2 className={`${header2}`}> Essence: {essence[world]} </h2>
 
             <div onClick={() => {
                     const clone = Object.assign({}, essence);
