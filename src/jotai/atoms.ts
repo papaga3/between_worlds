@@ -6,24 +6,24 @@ export const worldAtom = atom(World.Overworld);
 const essence: Record<string, number> = { underworld: 0, overworld: 0 }
 export const essenceAtom = atom(essence);
 
-type upgradeObj {
-    ttl: number;
-    ready: boolean;
+type UpgradeObj =  {
+    ttl: number,
+    ready: boolean,
 }
-const objectPool: Record<string, Record<string, Object>> = {
+const objectPool: Record<string, Record<string, UpgradeObj>> = {
     underworld: {
-        tier1: {},
-        tier2: {},
-        tier3: {},
-        tier4: {},
-        tier5: {},
+        tier1: { ttl: 0, ready: false },
+        tier2: { ttl: 0, ready: false },
+        tier3: { ttl: 0, ready: false },
+        tier4: { ttl: 0, ready: false },
+        tier5: { ttl: 0, ready: false },
     },
     overworld: {
-        tier1: {},
-        tier2: {},
-        tier3: {},
-        tier4: {},
-        tier5: {},
+        tier1: { ttl: 0, ready: false },
+        tier2: { ttl: 0, ready: false },
+        tier3: { ttl: 0, ready: false },
+        tier4: { ttl: 0, ready: false },
+        tier5: { ttl: 0, ready: false },
     }
 };
 
