@@ -9,6 +9,7 @@ export enum World {
 export const header1 = "text-center text-xl font-bold font-serif";
 export const header2 = "text-center text-lg font-bold font-serif";
 
+export const MAX_UPGRADE = 10;
 export const upgrades: Record<string, Record<string, Upgrade>> = {
     // Underworld upgrades
     underworld: {
