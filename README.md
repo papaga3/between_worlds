@@ -1,7 +1,7 @@
 # BETWEEN WORLDS
 
 ## Description
-A small game created for Gamedev.js Jam 2025
+A small auto-clicker
 
 ## Control
 
